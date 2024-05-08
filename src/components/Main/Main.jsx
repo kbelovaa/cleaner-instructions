@@ -1,5 +1,6 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
+import img0 from '../../images/img0.png';
 import img1 from '../../images/img1.png';
 import img2 from '../../images/img2.png';
 import img3 from '../../images/img3.png';
@@ -25,6 +26,23 @@ import img22 from '../../images/img22.png';
 import './Main.scss';
 
 const Main = () => {
+  const [windowWidth, setWindowWidth] = useState();
+
+  useEffect(() => {
+    const handleResize = () => {
+      const width = window.innerWidth;
+      setWindowWidth(width);
+    };
+
+    handleResize();
+
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
   const { t, i18n } = useTranslation();
   const { language } = i18n;
 
@@ -36,7 +54,11 @@ const Main = () => {
           <p className="section__text">{t('systemText')}</p>
           <div className="system__images">
             <div className="system__img-wrap">
-              <img className="system__img_1" src={img1} alt="Mobile+Web Customer" />
+              {windowWidth <= 1440 ? (
+                <img className="system__img_1" src={img0} alt="Mobile+Web Customer" />
+              ) : (
+                <img className="system__img_1" src={img1} alt="Mobile+Web Customer" />
+              )}
               <span className="system__img-label">{t('mobileWeb')}</span>
             </div>
             <div className="system__img-wrap">
@@ -231,52 +253,10 @@ const Main = () => {
               <img className="status__img img" src={img15} alt="Profile status" />
               <div className="status__img-border border"></div>
             </div>
-            <svg
-              className="status__arrow"
-              xmlns="http://www.w3.org/2000/svg"
-              width="40"
-              height="41"
-              viewBox="0 0 40 41"
-              fill="none"
-            >
-              <path
-                d="M21.667 28.8159L30.0003 20.4826L21.667 12.1493"
-                stroke="#268664"
-                strokeWidth="2"
-                strokeLinecap="round"
-              />
-              <path
-                d="M11.667 28.8159L20.0003 20.4826L11.667 12.1493"
-                stroke="#268664"
-                strokeWidth="2"
-                strokeLinecap="round"
-              />
-            </svg>
             <div className="status__img-wrap">
               <img className="status__img img" src={img16} alt="Profile status" />
               <div className="status__img-border border"></div>
             </div>
-            <svg
-              className="status__arrow"
-              xmlns="http://www.w3.org/2000/svg"
-              width="40"
-              height="41"
-              viewBox="0 0 40 41"
-              fill="none"
-            >
-              <path
-                d="M21.667 28.8159L30.0003 20.4826L21.667 12.1493"
-                stroke="#268664"
-                strokeWidth="2"
-                strokeLinecap="round"
-              />
-              <path
-                d="M11.667 28.8159L20.0003 20.4826L11.667 12.1493"
-                stroke="#268664"
-                strokeWidth="2"
-                strokeLinecap="round"
-              />
-            </svg>
             <div className="status__img-wrap">
               <img className="status__img img" src={img17} alt="Profile status" />
               <div className="status__img-border border"></div>

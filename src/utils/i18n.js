@@ -44,7 +44,7 @@ i18n.use(initReactI18next).init({
         statusText4: 'Red: You are outside of your working hours.',
         request: 'Request',
         requestText:
-          'The first icon on the left shows requests that match your working hours and radius. A new request will be indicated by a small circle on the icon. When you press it, you will see each request listed, where you can click to view the details and the location on the map. Upon accepting a request (and being the first to do so), all information is sent to the next icon on the right - Schedule.',
+          'The first icon on the left shows requests that match your working hours and radius. A new request will be indicated by a small circle on the icon. When you press it, you will see each request listed, where you can click to view the details and the location on the map. Upon accepting a request (and being the first to do so), all information is sent to the next icon on the right\u00A0- Schedule.',
         schedule: 'Schedule',
         scheduleText:
           'Under schedule, you can see all your upcoming jobs and there is also a calendar view with a highlight on the days that you have accepted jobs on. If you have multiple jobs, they will be listed as line items where you can press each one to see the details and the expected salary.',
