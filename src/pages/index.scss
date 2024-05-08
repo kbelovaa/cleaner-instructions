@@ -1,0 +1,31 @@
+@font-face {
+  font-family: 'SF Pro Display';
+  src: url('../fonts/sfProDisplay-light.woff') format('woff');
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('../fonts/Inter-Medium.woff') format('woff');
+  font-weight: 500;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*:active,
+*:focus,
+*:focus-visible {
+  outline: none;
+}
+
+body {
+  background: #fff;
+  color: #000;
+  font-family: 'SF Pro Display', sans-serif;
+  font-weight: 300;
+  transition: all 0.3s ease;
+}
