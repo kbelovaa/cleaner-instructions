@@ -5,23 +5,41 @@ import img1 from '../../images/img1.png';
 import img2 from '../../images/img2.png';
 import img3 from '../../images/img3.png';
 import img4 from '../../images/img4.png';
+import img4es from '../../images/img4_es.png';
 import img5 from '../../images/img5.png';
+import img5es from '../../images/img5_es.png';
 import img6 from '../../images/img6.png';
+import img6es from '../../images/img6_es.png';
 import img7 from '../../images/img7.png';
+import img7es from '../../images/img7_es.png';
 import img8 from '../../images/img8.png';
+import img8es from '../../images/img8_es.png';
 import img9 from '../../images/img9.png';
+import img9es from '../../images/img9_es.png';
 import img10 from '../../images/img10.png';
+import img10es from '../../images/img10_es.png';
 import img11 from '../../images/img11.png';
+import img11es from '../../images/img11_es.png';
 import img12 from '../../images/img12.png';
+import img12es from '../../images/img12_es.png';
 import img13 from '../../images/img13.png';
+import img13es from '../../images/img13_es.png';
 import img14 from '../../images/img14.png';
+import img14es from '../../images/img14_es.png';
 import img15 from '../../images/img15.png';
+import img15es from '../../images/img15_es.png';
 import img16 from '../../images/img16.png';
+import img16es from '../../images/img16_es.png';
 import img17 from '../../images/img17.png';
+import img17es from '../../images/img17_es.png';
 import img18 from '../../images/img18.png';
+import img18es from '../../images/img18_es.png';
 import img19 from '../../images/img19.png';
+import img19es from '../../images/img19_es.png';
 import img20 from '../../images/img20.png';
+import img20es from '../../images/img20_es.png';
 import img21 from '../../images/img21.png';
+import img21es from '../../images/img21_es.png';
 import img22 from '../../images/img22.png';
 import './Main.scss';
 
@@ -76,16 +94,32 @@ const Main = () => {
           <p className="section__text">{t('howItWorksText1')}</p>
           <p className="section__text">{t('howItWorksText2')}</p>
           <div className="how-it-works__images">
-            <img className="how-it-works__img img" src={img4} alt="Requests list" />
-            <img className="how-it-works__img img" src={img5} alt="Requests map" />
+            {language === 'en' ? (
+              <img className="how-it-works__img img" src={img4} alt="Requests list" />
+            ) : (
+              <img className="how-it-works__img img" src={img4es} alt="Requests list" />
+            )}
+            {language === 'en' ? (
+              <img className="how-it-works__img img" src={img5} alt="Requests map" />
+            ) : (
+              <img className="how-it-works__img img" src={img5es} alt="Requests map" />
+            )}
           </div>
         </section>
         <section className="section app">
           <h1 className="section__title">{t('mobileApp')}</h1>
           <p className="section__text">{t('mobileAppText')}</p>
           <div className="app__images">
-            <img className="app__img img" src={img6} alt="Push notification" />
-            <img className="app__img img" src={img7} alt="App notification" />
+            {language === 'en' ? (
+              <img className="app__img img" src={img6} alt="Push notification" />
+            ) : (
+              <img className="app__img img" src={img6es} alt="Push notification" />
+            )}
+            {language === 'en' ? (
+              <img className="app__img img" src={img7} alt="App notification" />
+            ) : (
+              <img className="app__img img" src={img7es} alt="App notification" />
+            )}
           </div>
         </section>
         <section className="section menu">
@@ -94,7 +128,11 @@ const Main = () => {
           <p className="section__text">{t('menuBarText2')}</p>
           <div className="menu__images">
             <div className="menu__img-wrap">
-              <img className="menu__img_1 img" src={img8} alt="Tab bar" />
+              {language === 'en' ? (
+                <img className="menu__img_1 img" src={img8} alt="Tab bar" />
+              ) : (
+                <img className="menu__img_1 img" src={img8es} alt="Tab bar" />
+              )}
               <div className="menu__img-border_1 border"></div>
             </div>
             <svg
@@ -119,7 +157,11 @@ const Main = () => {
               />
             </svg>
             <div className="menu__img-wrap">
-              <img className="menu__img_2 img" src={img9} alt="Profile screen" />
+              {language === 'en' ? (
+                <img className="menu__img_2 img" src={img9} alt="Profile screen" />
+              ) : (
+                <img className="menu__img_2 img" src={img9es} alt="Profile screen" />
+              )}
               <div className="menu__img-border_2 border"></div>
             </div>
           </div>
@@ -131,7 +173,11 @@ const Main = () => {
           <p className="section__text">{t('workingHoursText3')}</p>
           <div className="hours__images">
             <div className="hours__img-wrap">
-              <img className="img" src={img10} alt="Working hours" />
+              {language === 'en' ? (
+                <img className="img" src={img10} alt="Working hours" />
+              ) : (
+                <img className="img" src={img10es} alt="Working hours" />
+              )}
               <div className="hours__img-border_1 border"></div>
             </div>
             <svg
@@ -156,7 +202,11 @@ const Main = () => {
               />
             </svg>
             <div className="hours__img-wrap">
-              <img className="img" src={img11} alt="Working hours" />
+              {language === 'en' ? (
+                <img className="img" src={img11} alt="Working hours" />
+              ) : (
+                <img className="img" src={img11es} alt="Working hours" />
+              )}
               <div className="hours__img-border_2 border"></div>
             </div>
             <svg
@@ -180,7 +230,11 @@ const Main = () => {
                 strokeLinecap="round"
               />
             </svg>
-            <img className="img" src={img12} alt="Working hours" />
+            {language === 'en' ? (
+              <img className="img" src={img12} alt="Working hours" />
+            ) : (
+              <img className="img" src={img12es} alt="Working hours" />
+            )}
           </div>
         </section>
         <section className="section radius">
@@ -190,7 +244,11 @@ const Main = () => {
           <p className="section__text">{t('workingRadiusText3')}</p>
           <div className="radius__images">
             <div className="radius__img-wrap">
-              <img className="img" src={img9} alt="Working radius" />
+              {language === 'en' ? (
+                <img className="img" src={img9} alt="Working radius" />
+              ) : (
+                <img className="img" src={img9es} alt="Working radius" />
+              )}
               <div className="radius__img-border_1 border"></div>
             </div>
             <svg
@@ -215,7 +273,11 @@ const Main = () => {
               />
             </svg>
             <div className="radius__img-wrap">
-              <img className="img" src={img13} alt="Working radius" />
+              {language === 'en' ? (
+                <img className="img" src={img13} alt="Working radius" />
+              ) : (
+                <img className="img" src={img13es} alt="Working radius" />
+              )}
               <div className="radius__img-border_2 border"></div>
             </div>
             <svg
@@ -239,7 +301,11 @@ const Main = () => {
                 strokeLinecap="round"
               />
             </svg>
-            <img className="img" src={img14} alt="Working radius" />
+            {language === 'en' ? (
+              <img className="img" src={img14} alt="Working radius" />
+            ) : (
+              <img className="img" src={img14es} alt="Working radius" />
+            )}
           </div>
         </section>
         <section className="section status">
@@ -250,15 +316,27 @@ const Main = () => {
           <p className="section__text">{t('statusText4')}</p>
           <div className="status__images">
             <div className="status__img-wrap">
-              <img className="status__img img" src={img15} alt="Profile status" />
+              {language === 'en' ? (
+                <img className="status__img img" src={img15} alt="Profile status" />
+              ) : (
+                <img className="status__img img" src={img15es} alt="Profile status" />
+              )}
               <div className="status__img-border border"></div>
             </div>
             <div className="status__img-wrap">
-              <img className="status__img img" src={img16} alt="Profile status" />
+              {language === 'en' ? (
+                <img className="status__img img" src={img16} alt="Profile status" />
+              ) : (
+                <img className="status__img img" src={img16es} alt="Profile status" />
+              )}
               <div className="status__img-border border"></div>
             </div>
             <div className="status__img-wrap">
-              <img className="status__img img" src={img17} alt="Profile status" />
+              {language === 'en' ? (
+                <img className="status__img img" src={img17} alt="Profile status" />
+              ) : (
+                <img className="status__img img" src={img17es} alt="Profile status" />
+              )}
               <div className="status__img-border border"></div>
             </div>
           </div>
@@ -267,8 +345,16 @@ const Main = () => {
           <h1 className="section__title">{t('request')}</h1>
           <p className="section__text">{t('requestText')}</p>
           <div className="request__images">
-            <img className="request__img img" src={img18} alt="Requests list" />
-            <img className="request__img img" src={img5} alt="Requests map" />
+            {language === 'en' ? (
+              <img className="request__img img" src={img18} alt="Requests list" />
+            ) : (
+              <img className="request__img img" src={img18es} alt="Requests list" />
+            )}
+            {language === 'en' ? (
+              <img className="request__img img" src={img5} alt="Requests map" />
+            ) : (
+              <img className="request__img img" src={img5es} alt="Requests map" />
+            )}
           </div>
         </section>
         <section className="section schedule">
@@ -276,7 +362,11 @@ const Main = () => {
           <p className="section__text">{t('scheduleText')}</p>
           <div className="schedule__images">
             <div className="schedule__img-wrap">
-              <img className="img" src={img19} alt="Schedule" />
+              {language === 'en' ? (
+                <img className="img" src={img19} alt="Schedule" />
+              ) : (
+                <img className="img" src={img19es} alt="Schedule" />
+              )}
               <div className="schedule__img-border_1 border"></div>
             </div>
             <svg
@@ -301,7 +391,11 @@ const Main = () => {
               />
             </svg>
             <div className="schedule__img-wrap">
-              <img className="img" src={img20} alt="Job details" />
+              {language === 'en' ? (
+                <img className="img" src={img20} alt="Job details" />
+              ) : (
+                <img className="img" src={img20es} alt="Job details" />
+              )}
               <div className="schedule__img-border_2 border"></div>
             </div>
           </div>
@@ -311,7 +405,11 @@ const Main = () => {
           <p className="section__text">{t('notificationsText')}</p>
           <div className="notifications__images">
             <div className="notifications__img-wrap">
-              <img className="img" src={img21} alt="Notifications" />
+              {language === 'en' ? (
+                <img className="img" src={img21} alt="Notifications" />
+              ) : (
+                <img className="img" src={img21es} alt="Notifications" />
+              )}
               <div className="notifications__img-border_1 border"></div>
             </div>
             <svg
@@ -336,7 +434,11 @@ const Main = () => {
               />
             </svg>
             <div className="notifications__img-wrap">
-              <img className="img" src={img7} alt="Notification" />
+              {language === 'en' ? (
+                <img className="img" src={img7} alt="Notification" />
+              ) : (
+                <img className="img" src={img7es} alt="Notification" />
+              )}
               <div className="notifications__img-border_2 border"></div>
             </div>
           </div>
